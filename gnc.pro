@@ -1,6 +1,8 @@
 
 QT += core gui network widgets
 
+CONFIG += c++11
+
 TARGET = GraphicNetCat
 TEMPLATE = app
 
