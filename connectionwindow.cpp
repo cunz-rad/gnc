@@ -292,6 +292,10 @@ void ConnectionWindow::setState(State s)
 		emit changeTitle(tr("Disconnected"));
 		btnConnect->setText(tr("C&onnect"));
 		break;
+
+	case State::None:
+		Q_ASSERT(false);
+		return;
 	}
 
 	lblStatus->setVisible(s != State::Disconnected);
